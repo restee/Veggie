@@ -1,13 +1,15 @@
-package com.bst.veggiesoft;
+package com.bst.veggiesoft.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SplashActivity extends AppCompatActivity {
+import com.bst.veggiesoft.R;
+
+public class DeviceSelectionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_device_selection);
     }
 }
