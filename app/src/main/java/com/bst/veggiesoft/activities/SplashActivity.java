@@ -31,8 +31,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        CrashlyticsCore core = new CrashlyticsCore.Builder().disabled(BuildConfig.DEBUG).build();
-        Fabric.with(this, new Crashlytics.Builder().core(core).build());
 
         PackageInfo pInfo = null;
         String version = "";
@@ -47,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
                 .withFullScreen()
                 .withTargetActivity(DeviceSelectionActivity.class)
                 .withSplashTimeOut(4000)
-                .withBackgroundResource(R.drawable.loading)
+                .withLogo(R.drawable.veggie_soft_logo)
                 .withFooterText("Version " + version);
 
         easySplashScreenConfig.getFooterTextView().setTextColor(Color.WHITE);

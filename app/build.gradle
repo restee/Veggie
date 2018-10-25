@@ -47,6 +47,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'de.mindpipe.android:android-logging-log4j:1.0.3'
     compile 'gr.pantrif:easy-android-splash-screen:0.0.1'
+    compile 'com.android.support:percent:24.2.1'
     compile 'com.intuit.sdp:sdp-android:1.0.6'
     compile 'com.github.satyan:sugar:1.5'
     compile 'log4j:log4j:1.2.16'
