@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    tools:context="com.bst.veggiesoft.activities.MainActivity">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_topImage"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:src="@drawable/bst_banner"
+            app:layout_heightPercent="10%" />
+
+        <TextView
+            android:id="@+id/textView_deviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView_topImage"
+            android:layout_marginBottom="@dimen/views_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Device 1"
+            android:textSize="20sp" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_ph"
+            android:layout_below="@+id/textView_deviceName"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/views_horizontal_margin"
+            android:background="@drawable/option_button_selector"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="42.5%">
+
+            <TextView
+                android:id="@+id/textView_phValue"
+
+                android:layout_above="@+id/textView_phLabel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/textview_border_black"
+                android:gravity="center_vertical"
+                android:text="20"
+                android:textAlignment="center"
+                android:textSize="@dimen/_30sdp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="90%" />
+
+            <TextView
+                android:id="@+id/textView_phLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="PH"
+                android:textSize="@dimen/_18sdp" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_ammonia"
+            android:layout_alignTop="@+id/layout_ph"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/views_horizontal_margin"
+            android:layout_toRightOf="@+id/layout_ph"
+            android:background="@drawable/option_button_selector"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="42.5%">
+
+            <TextView
+                android:id="@+id/textView_ammoniaValue"
+                android:layout_above="@+id/textView_ammoniaLabel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/textview_border_black"
+                android:gravity="center_vertical"
+                android:text="20"
+                android:textAlignment="center"
+                android:textSize="@dimen/_30sdp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="90%" />
+
+            <TextView
+                android:id="@+id/textView_ammoniaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Ammonia"
+                android:textSize="@dimen/_18sdp" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_waterTemp"
+            android:layout_below="@+id/layout_ph"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/views_horizontal_margin"
+            android:background="@drawable/option_button_selector"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="42.5%">
+
+            <TextView
+                android:id="@+id/textView_waterTempValue"
+
+                android:layout_above="@+id/textView_waterTempLabel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/textview_border_black"
+                android:gravity="center_vertical"
+                android:text="20\u2103"
+                android:textAlignment="center"
+                android:textSize="@dimen/_30sdp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="90%" />
+
+            <TextView
+                android:id="@+id/textView_waterTempLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Water Temp"
+                android:textSize="@dimen/_18sdp" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_nitrate"
+            android:layout_alignTop="@+id/layout_waterTemp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/views_horizontal_margin"
+            android:layout_toRightOf="@+id/layout_waterTemp"
+            android:background="@drawable/option_button_selector"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="42.5%">
+
+            <TextView
+                android:id="@+id/textView_nitrateValue"
+                android:layout_above="@+id/textView_nitrateLabel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/textview_border_black"
+                android:gravity="center_vertical"
+                android:text="20"
+                android:textAlignment="center"
+                android:textSize="@dimen/_30sdp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="90%" />
+
+            <TextView
+                android:id="@+id/textView_nitrateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Nitrate"
+                android:textSize="@dimen/_18sdp" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_airHumidity"
+            android:layout_below="@+id/layout_waterTemp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/views_horizontal_margin"
+            android:background="@drawable/option_button_selector"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="60%">
+
+            <TextView
+                android:id="@+id/textView_airHumidityValue"
+
+                android:layout_above="@+id/textView_airHumidityLabel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/textview_border_black"
+                android:gravity="center_vertical"
+                android:text="20"
+                android:textAlignment="center"
+                android:textSize="@dimen/_30sdp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="90%" />
+
+            <TextView
+                android:id="@+id/textView_airHumidityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Air Humidity"
+                android:textSize="@dimen/_18sdp" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <!--
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/layout_airTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/textView_deviceName"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/option_button_selector"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:layout_heightPercent="12%">
+
+                    <TextView
+                        android:id="@+id/textView_airTempLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PH"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_airTemperatureValue"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toLeftOf="@+id/textView_airTemperatureValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_airTemperatureValue"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_airTempLabel"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/textview_border_black"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="20"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_widthPercent="25%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_airTemperatureValue"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/textView_airTemperatureValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/airTemperatureWarning"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/views_vertical_margin"
+                        app:layout_heightPercent="35%"
+                        app:layout_widthPercent="10%" />
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/layout_airHumidity"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/layout_airTemperature"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/option_button_selector"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:layout_heightPercent="12%">
+
+                    <TextView
+                        android:id="@+id/textView_airHumidityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ammonia"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_airHumidityValue"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toLeftOf="@+id/textView_airHumidityValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_airHumidityValue"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_airHumidityLabel"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/textview_border_black"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="40"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_widthPercent="25%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_airHumidityValue"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/textView_airHumidityValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/airHumidityWarning"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/views_vertical_margin"
+                        app:layout_heightPercent="35%"
+                        app:layout_widthPercent="10%" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/layout_airCarbonDioxide"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/layout_airHumidity"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/option_button_selector"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:layout_heightPercent="12%">
+
+                    <TextView
+                        android:id="@+id/textView_airCo2Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Water Temp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_airCarbonDioxideValue"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toLeftOf="@+id/textView_airCarbonDioxideValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_airCarbonDioxideValue"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_airCo2Label"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/textview_border_black"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="20"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_widthPercent="25%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView_airCarbonDioxideValue"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/textView_airCarbonDioxideValue"
+                        android:text="Celsius"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/airCarbonDioxideWarning"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/views_vertical_margin"
+                        app:layout_heightPercent="35%"
+                        app:layout_widthPercent="10%" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/layout_waterTemp"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/layout_airCarbonDioxide"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/option_button_selector"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:layout_heightPercent="12%">
+
+                    <TextView
+                        android:id="@+id/textView_waterTempLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Air Humidity"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_waterTempValue"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toLeftOf="@+id/textView_waterTempValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_waterTempValue"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_waterTempLabel"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/textview_border_black"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="10"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        app:layout_widthPercent="25%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_waterTempValue"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/textView_waterTempValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/waterTempWarning"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/views_vertical_margin"
+                        app:layout_heightPercent="35%"
+                        app:layout_widthPercent="10%" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/layout_waterEC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/layout_waterTemp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/option_button_selector"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:layout_heightPercent="12%">
+
+                    <TextView
+                        android:id="@+id/textView_waterEcLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nitrate"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_waterECValue"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toLeftOf="@+id/textView_waterECValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_waterECValue"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_waterEcLabel"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/textview_border_black"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="20"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        app:layout_widthPercent="25%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView_waterECValue"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/textView_waterECValue"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/waterECWarning"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/views_vertical_margin"
+                        app:layout_heightPercent="35%"
+                        app:layout_widthPercent="10%" />
+
+                </android.support.percent.PercentRelativeLayout>
+        -->
+
+
+        <RelativeLayout
+            android:id="@+id/layout_phCalibration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/option_button_selector"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="Autofishfeeder"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

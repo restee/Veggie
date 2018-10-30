@@ -45,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
                 .withFullScreen()
                 .withTargetActivity(DeviceSelectionActivity.class)
                 .withSplashTimeOut(4000)
-                .withLogo(R.drawable.veggie_soft_logo)
+                .withLogo(R.drawable.bst_logo)
                 .withFooterText("Version " + version);
 
         easySplashScreenConfig.getFooterTextView().setTextColor(Color.WHITE);

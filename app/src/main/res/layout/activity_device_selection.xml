@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
     tools:context="com.bst.veggiesoft.activities.DeviceSelectionActivity">
 
     <ImageView
         android:id="@+id/imageView_topImage"
+        android:layout_width="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:src="@drawable/veggie_soft_logo"
-        app:layout_heightPercent="10%"
-        app:layout_widthPercent="15%" />
+        android:src="@drawable/bst_banner"
+        app:layout_heightPercent="10%" />
 
     <ListView
         android:id="@+id/listview_devicesPaired"

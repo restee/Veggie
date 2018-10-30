@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="activity_horizontal_margin">@dimen/_14sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_14sdp</dimen>
+
+    <dimen name="views_horizontal_margin">@dimen/_7sdp</dimen>
+    <dimen name="views_vertical_margin">@dimen/_7sdp</dimen>
+</resources>

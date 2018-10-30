@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_deviceName"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:textSize="22sp"
+        app:layout_widthPercent="80%" />
+
+    <RadioButton
+        android:id="@+id/radioButton_visible"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:buttonTint="@android:color/holo_green_light"
+        android:checked="true"
+        android:clickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_widthPercent="10%" />
+
+</android.support.percent.PercentRelativeLayout>
